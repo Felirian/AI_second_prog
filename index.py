@@ -1,8 +1,9 @@
 import numpy as np
-from keras.datasets import cifar10
+from tensorflow.keras.datasets import cifar10
+
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
-from keras.preprocessing.image import ImageDataGenerator
+
 from keras.utils import to_categorical
 from kerastuner.tuners import RandomSearch
 
@@ -55,8 +56,7 @@ tuner = RandomSearch(
     build_model,
     objective='val_accuracy',
     max_trials=5,  
-    directory='tuner_dir',  
-    
+    directory='tuner_dir',
 )
 
 tuner.search(X_train, y_train, epochs=10, validation_split=0.2)
