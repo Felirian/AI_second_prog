@@ -1,1 +1,118 @@
-{"ongoing_trials": {"tuner0": "1"}, "hyperparameters": {"space": [{"class_name": "Int", "config": {"name": "conv1_filters", "default": null, "conditions": [], "min_value": 32, "max_value": 64, "step": 16, "sampling": "linear"}}, {"class_name": "Int", "config": {"name": "conv2_filters", "default": null, "conditions": [], "min_value": 32, "max_value": 64, "step": 16, "sampling": "linear"}}, {"class_name": "Int", "config": {"name": "dense_units", "default": null, "conditions": [], "min_value": 32, "max_value": 64, "step": 16, "sampling": "linear"}}, {"class_name": "Choice", "config": {"name": "dropout_rate", "default": 0.2, "conditions": [], "values": [0.2, 0.3, 0.4], "ordered": true}}], "values": {"conv1_filters": 32, "conv2_filters": 32, "dense_units": 32, "dropout_rate": 0.2}}, "start_order": ["0", "1"], "end_order": ["0"], "run_times": {"0": 1}, "retry_queue": [], "seed": 3413, "seed_state": 3421, "tried_so_far": ["f44346ee5a733b966b2debf067f11b1c", "d986b216d6198a7b164d6e7cc0589975"], "id_to_hash": {"0": "f44346ee5a733b966b2debf067f11b1c", "1": "d986b216d6198a7b164d6e7cc0589975"}, "display": {"search_start": "2023-12-14T01:23:25.707000", "trial_start": {"0": "2023-12-14T01:23:25.707000"}, "trial_number": {"0": 1}}}
+{
+  "ongoing_trials": {},
+  "hyperparameters": {
+    "space": [
+      {
+        "class_name": "Int",
+        "config": {
+          "name": "conv1_filters",
+          "default": null,
+          "conditions": [],
+          "min_value": 32,
+          "max_value": 64,
+          "step": 16,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Int",
+        "config": {
+          "name": "conv2_filters",
+          "default": null,
+          "conditions": [],
+          "min_value": 32,
+          "max_value": 64,
+          "step": 16,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Int",
+        "config": {
+          "name": "dense_units",
+          "default": null,
+          "conditions": [],
+          "min_value": 32,
+          "max_value": 64,
+          "step": 16,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Choice",
+        "config": {
+          "name": "dropout_rate",
+          "default": 0.2,
+          "conditions": [],
+          "values": [
+            0.2,
+            0.3,
+            0.4
+          ],
+          "ordered": true
+        }
+      }
+    ],
+    "values": {
+      "conv1_filters": 32,
+      "conv2_filters": 32,
+      "dense_units": 32,
+      "dropout_rate": 0.2
+    }
+  },
+  "start_order": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "end_order": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "run_times": {
+    "0": 1,
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+  },
+  "retry_queue": [],
+  "seed": 12,
+  "seed_state": 32,
+  "tried_so_far": [
+    "3790009c3dea32e053b89adb3d486ae2",
+    "847fd779cec6eef739e130f1b84b05a3",
+    "642ea732d65c279fd93800eedb8c3c50",
+    "1c0f35b1e7734fc8e14339051bbb0642",
+    "eff4aebcd2d6c376c83b0723509e45d4"
+  ],
+  "id_to_hash": {
+    "0": "1c0f35b1e7734fc8e14339051bbb0642",
+    "1": "eff4aebcd2d6c376c83b0723509e45d4",
+    "2": "847fd779cec6eef739e130f1b84b05a3",
+    "3": "642ea732d65c279fd93800eedb8c3c50",
+    "4": "3790009c3dea32e053b89adb3d486ae2"
+  },
+  "display": {
+    "search_start": "2023-12-14T01:50:20.136750",
+    "trial_start": {
+      "0": "2023-12-14T01:50:20.136750",
+      "1": "2023-12-14T01:57:21.421916",
+      "2": "2023-12-14T02:02:53.849177",
+      "3": "2023-12-14T02:09:27.878824",
+      "4": "2023-12-14T02:17:20.454823"
+    },
+    "trial_number": {
+      "0": 1,
+      "1": 2,
+      "2": 3,
+      "3": 4,
+      "4": 5
+    }
+  }
+}

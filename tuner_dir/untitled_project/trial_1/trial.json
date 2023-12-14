@@ -1,1 +1,115 @@
-{"trial_id": "1", "hyperparameters": {"space": [{"class_name": "Int", "config": {"name": "conv1_filters", "default": null, "conditions": [], "min_value": 32, "max_value": 64, "step": 16, "sampling": "linear"}}, {"class_name": "Int", "config": {"name": "conv2_filters", "default": null, "conditions": [], "min_value": 32, "max_value": 64, "step": 16, "sampling": "linear"}}, {"class_name": "Int", "config": {"name": "dense_units", "default": null, "conditions": [], "min_value": 32, "max_value": 64, "step": 16, "sampling": "linear"}}, {"class_name": "Choice", "config": {"name": "dropout_rate", "default": 0.2, "conditions": [], "values": [0.2, 0.3, 0.4], "ordered": true}}], "values": {"conv1_filters": 64, "conv2_filters": 32, "dense_units": 32, "dropout_rate": 0.3}}, "metrics": {"metrics": {}}, "score": null, "best_step": 0, "status": "RUNNING", "message": null}
+{
+  "trial_id": "1",
+  "hyperparameters": {
+    "space": [
+      {
+        "class_name": "Int",
+        "config": {
+          "name": "conv1_filters",
+          "default": null,
+          "conditions": [],
+          "min_value": 32,
+          "max_value": 64,
+          "step": 16,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Int",
+        "config": {
+          "name": "conv2_filters",
+          "default": null,
+          "conditions": [],
+          "min_value": 32,
+          "max_value": 64,
+          "step": 16,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Int",
+        "config": {
+          "name": "dense_units",
+          "default": null,
+          "conditions": [],
+          "min_value": 32,
+          "max_value": 64,
+          "step": 16,
+          "sampling": "linear"
+        }
+      },
+      {
+        "class_name": "Choice",
+        "config": {
+          "name": "dropout_rate",
+          "default": 0.2,
+          "conditions": [],
+          "values": [
+            0.2,
+            0.3,
+            0.4
+          ],
+          "ordered": true
+        }
+      }
+    ],
+    "values": {
+      "conv1_filters": 48,
+      "conv2_filters": 48,
+      "dense_units": 32,
+      "dropout_rate": 0.4
+    }
+  },
+  "metrics": {
+    "metrics": {
+      "loss": {
+        "direction": "min",
+        "observations": [
+          {
+            "value": [
+              1.1852816343307495
+            ],
+            "step": 9
+          }
+        ]
+      },
+      "accuracy": {
+        "direction": "max",
+        "observations": [
+          {
+            "value": [
+              0.5702750086784363
+            ],
+            "step": 9
+          }
+        ]
+      },
+      "val_loss": {
+        "direction": "min",
+        "observations": [
+          {
+            "value": [
+              1.0279109477996826
+            ],
+            "step": 9
+          }
+        ]
+      },
+      "val_accuracy": {
+        "direction": "max",
+        "observations": [
+          {
+            "value": [
+              0.6434000134468079
+            ],
+            "step": 9
+          }
+        ]
+      }
+    }
+  },
+  "score": 0.6434000134468079,
+  "best_step": 9,
+  "status": "COMPLETED",
+  "message": null
+}
